@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.atos.User" table="User">
+<id name="id" column="id">
+<!--  <generator class="assigned"></generator>--><!-- class assigned value for product id will be stored-->
+<generator class="increment"/>
+</id>
+<property name="email" column="email"/>
+<property name="password" column="password"/>
+<property name="first_name" column="first_name"/>
+<property name="last_name" column="last_name"/>
+<property name="mobile" column="mobile"/>
+</class>
+</hibernate-mapping>
